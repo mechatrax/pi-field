@@ -1,4 +1,4 @@
-# pifield-bullseye-lite-{BUILD_DATE}
+# pifield-bullseye-lite-20220208
 Raspberry Pi OS (32-bit) January 28th 2022 を元に変更を加えています。
 
 ## イメージファイル
