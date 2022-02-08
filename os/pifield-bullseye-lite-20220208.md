@@ -3,7 +3,7 @@ Raspberry Pi OS (32-bit) January 28th 2022 を元に変更を加えています�
 
 ## イメージファイル
 イメージファイルは次のリンクからダウンロードできます。  
-[pifield-bullseye-lite-20220107.zip](https://mechatrax.com/data/pi-field/pifield-bullseye-lite-20220208.zip)  
+[pifield-bullseye-lite-20220208.zip](https://mechatrax.com/data/pi-field/pifield-bullseye-lite-20220208.zip)  
 
 イメージファイルの SHA256 ハッシュ値は次のとおりです。
 ```
