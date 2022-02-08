@@ -24,6 +24,10 @@ Pi-field 用 microSD カードに付属している初期ログイン情報カ�
 ## リリースノート
 Pi-field 用 microSD カードにインストールされている OS イメージのリリースノートを公開しています。
 
+* ### pifield-bullseye-lite-20220208
+  2022/02/08  以降に出荷された製品には本リリースの OS イメージがインストールされています。  
+  詳細は、[pifield-bullseye-lite-20220208.md](./pifield-bullseye-lite-20220208.md) を参照してください。
+
 * ### pifield-bullseye-lite-20220127
   2022/01/27 以降に出荷された製品には本リリースの OS イメージがインストールされています。  
   詳細は、[pifield-bullseye-lite-20220127.md](./pifield-bullseye-lite-20220127.md) を参照してください。  
