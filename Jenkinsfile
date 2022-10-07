@@ -42,7 +42,7 @@ pipeline{
 		stage("Check") {
 			steps {
 				sh 'test -e ${TEMP_DIR}/${RELEASE_NAME}.img.xz && sudo mv ${TEMP_DIR}/${RELEASE_NAME}.img.xz ${TEMP_DIR}/${RELEASE_NAME}.img.xz.orig'
-				sh 'wget -q https://mechatrax.com/data/pi-field/${RELEASE_NAME}.img.xz -P ${TEMP_DIR}'
+				sh 'sudo wget -q https://mechatrax.com/data/pi-field/${RELEASE_NAME}.img.xz -P ${TEMP_DIR}'
 				sh 'sha256sum -c ${TEMP_DIR}/${SUM_FILE}'
 				sh 'sudo rm -vf ${TEMP_DIR}/${RELEASE_NAME}.img.xz ${TEMP_DIR}/${RELEASE_NAME}.img.xz.orig ${TEMP_DIR}/${SUM_FILE}'
 			}
