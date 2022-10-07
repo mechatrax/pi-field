@@ -20,7 +20,7 @@ pipeline{
 						if ( ! msg.contains("Release") ) {
 							sh 'curl -s -X POST -u ${JENKINS_USERNAME}:${JENKINS_TOKEN} http://127.0.0.1:8080/job/${JOB_NAME}/${BUILD_NUMBER}/stop'
 						}
-						env.RELEASE_NAME = msg.replaceFirst('Release.*(pifield-.*)', '$1')
+						env.RELEASE_NAME = msg.replaceFirst('Release.*(pifield[^ ]+).*', '$1')
 						if ( env.RELEASE_NAME == "" ) {
 							sh 'curl -s -X POST -u ${JENKINS_USERNAME}:${JENKINS_TOKEN} http://127.0.0.1:8080/job/${JOB_NAME}/${BUILD_NUMBER}/stop'
 						}
@@ -35,7 +35,7 @@ pipeline{
 				usernamePassword(credentialsId: 'aa4ddfcc-11d9-418d-b794-8963612b6a78', passwordVariable: 'FTP_PASSWORD', usernameVariable: 'FTP_USERNAME'),
 				string(credentialsId: '0e3efab3-616e-439d-806b-55aac4cd84fd', variable: 'FTP_IP')
 				]) {
-					sh 'curl -sS -T ${TEMP_DIR}/${RELEASE_NAME}.img.xz -u ${FTP_USERNAME}:${FTP_PASSWORD} ftp://${FTP_IP}/data/pi-field'
+					sh 'curl -sS -T ${TEMP_DIR}/${RELEASE_NAME}.img.xz -u ${FTP_USERNAME}:${FTP_PASSWORD} ftp://${FTP_IP}/data/pi-field/'
 				}
 			}
 		}
@@ -45,7 +45,6 @@ pipeline{
 				sh 'wget -q https://mechatrax.com/data/pi-field/${RELEASE_NAME}.img.xz -P /dev/shm'
 				sh 'sha256sum -c ${TEMP_DIR}/${SUM_FILE}'
 				sh 'sudo rm -vf ${TEMP_DIR}/${RELEASE_NAME}.img.xz ${TEMP_DIR}/${RELEASE_NAME}.img.xz.orig ${TEMP_DIR}/${SUM_FILE}'
-				sh 'test -e ${TEMP_DIR} && sudo rm -rf ${TEMP_DIR}'
 			}
 		}
 		/*
