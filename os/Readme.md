@@ -19,7 +19,11 @@ https://github.com/mechatrax/ansible-mechatrax-playbook
 ## 初期ログイン情報カード
 Pi-field 用 microSD カードに付属している初期ログイン情報カードの .pdf ファイルを公開しています。  
 次のリンクから直接ファイルをダウンロードできます。  
-[初期ログイン情報カード](../../../raw/main/os/login.pdf)
+[初期ログイン情報カード](../../../raw/main/os/login_20221007.pdf)
+
+pifield-bullseye-lite-20221007 以降のリリースでは初期ユーザーが変更されています。  
+2022/10/7 より前に出荷された製品の初期ログイン情報カードは次のリンクからダウンロードできます。  
+[旧初期ログイン情報カード（20221007リリース前）](../../../raw/main/os/login.pdf)
 
 ## リリースノート
 Pi-field 用 microSD カードにインストールされている OS イメージのリリースノートを公開しています。
