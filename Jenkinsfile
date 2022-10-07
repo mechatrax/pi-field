@@ -2,6 +2,7 @@ pipeline{
 	agent any
 	environment {
 		TEMP_DIR = '/dev/shm/raspios'
+		POST_CREDS = credentials('c1957e02-a3d9-42e0-9dae-db8ce27974e1')
 	}
 	stages {
 		stage("Checkout GIT") {
@@ -62,9 +63,6 @@ pipeline{
 			}
 		}
 		*/
-	}
-	environment{
-		POST_CREDS = credentials('c1957e02-a3d9-42e0-9dae-db8ce27974e1')
 	}
 	post {
 		success {
