@@ -20,7 +20,7 @@ pipeline{
 						if ( ! msg.contains("Release") ) {
 							sh 'curl -s -X POST -u ${JENKINS_USERNAME}:${JENKINS_TOKEN} http://127.0.0.1:8080/job/${JOB_NAME}/${BUILD_NUMBER}/stop'
 						}
-						env.RELEASE_NAME = msg.replaceFirst('Release.*(pifield[^ ]+).*', '$1')
+						env.RELEASE_NAME = msg.replaceFirst('Release.*(pifield-.*)', '$1')
 						if ( env.RELEASE_NAME == "" ) {
 							sh 'curl -s -X POST -u ${JENKINS_USERNAME}:${JENKINS_TOKEN} http://127.0.0.1:8080/job/${JOB_NAME}/${BUILD_NUMBER}/stop'
 						}
@@ -42,9 +42,10 @@ pipeline{
 		stage("Check") {
 			steps {
 				sh 'test -e ${TEMP_DIR}/${RELEASE_NAME}.img.xz && sudo mv ${TEMP_DIR}/${RELEASE_NAME}.img.xz ${TEMP_DIR}/${RELEASE_NAME}.img.xz.orig'
-				sh 'sudo wget -q https://mechatrax.com/data/pi-field/${RELEASE_NAME}.img.xz -P ${TEMP_DIR}'
+				sh 'wget -q https://mechatrax.com/data/pi-field/${RELEASE_NAME}.img.xz -P ${TEMP_DIR}'
 				sh 'sha256sum -c ${TEMP_DIR}/${SUM_FILE}'
 				sh 'sudo rm -vf ${TEMP_DIR}/${RELEASE_NAME}.img.xz ${TEMP_DIR}/${RELEASE_NAME}.img.xz.orig ${TEMP_DIR}/${SUM_FILE}'
+				sh 'test -e ${TEMP_DIR} && sudo rm -rf ${TEMP_DIR}'
 			}
 		}
 		/*
