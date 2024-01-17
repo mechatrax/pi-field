@@ -34,7 +34,7 @@
 ### Pi-fieldLite_Manual_240115.pdf  
 2024/1/15 以降に出荷された Pi-field Lite の取扱説明書です。  
 変更内容  
-・各部名称と寸法 の内部レイアウト図を更新（構成品は変更なし）  
+・各部名称と寸法 の図面を更新（構成品は変更なし）  
 次のリンクから直接ファイルをダウンロードできます。  
 [Pi-fieldLite_Manual_240115.pdf](../../../raw/main/manual/Pi-fieldLite_Manual_240115.pdf)  
 
