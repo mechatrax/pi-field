@@ -2,10 +2,18 @@
 ここでは、Pi-field の取扱説明書を公開しています。  
 
 ## Pi-field  
+
+### Pi-field_Manual_240115.pdf  
+2024/1/15 以降に出荷された Pi-field の取扱説明書です。  
+変更内容  
+・各部名称と寸法 の内部レイアウト図を更新（構成品は変更なし）  
+次のリンクから直接ファイルをダウンロードできます。  
+[Pi-field_Manual_240115.pdf](../../../raw/main/manual/Pi-field_Manual_240115.pdf)  
+
 ### Pi-field_Manual_240104.pdf  
 2024/1/4 以降に出荷された Pi-field の取扱説明書です。  
 変更内容  
-・使用上の注意に無線LAN 5GHz帯の使用禁止を追加  
+・使用上の注意 に無線LAN 5GHz帯の使用禁止を追加  
 次のリンクから直接ファイルをダウンロードできます。  
 [Pi-field_Manual_240104.pdf](../../../raw/main/manual/Pi-field_Manual_240104.pdf)  
 
@@ -23,10 +31,17 @@
 
 ## Pi-field Lite  
 
+### Pi-fieldLite_Manual_240115.pdf  
+2024/1/15 以降に出荷された Pi-field Lite の取扱説明書です。  
+変更内容  
+・各部名称と寸法 の内部レイアウト図を更新（構成品は変更なし）  
+次のリンクから直接ファイルをダウンロードできます。  
+[Pi-fieldLite_Manual_240115.pdf](../../../raw/main/manual/Pi-fieldLite_Manual_240115.pdf)  
+
 ### Pi-fieldLite_Manual_240104.pdf  
 2024/1/4 以降に出荷された Pi-field Lite の取扱説明書です。  
 変更内容  
-・使用上の注意に無線LAN 5GHz帯の使用禁止を追加  
+・使用上の注意 に無線LAN 5GHz帯の使用禁止を追加  
 次のリンクから直接ファイルをダウンロードできます。  
 [Pi-fieldLite_Manual_240104.pdf](../../../raw/main/manual/Pi-fieldLite_Manual_240104.pdf)  
 
