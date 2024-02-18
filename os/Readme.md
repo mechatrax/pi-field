@@ -28,6 +28,10 @@ pifield-bullseye-lite-20221007 以降のリリースでは初期ユーザーが�
 ## リリースノート
 Pi-field 用 microSD カードにインストールされている OS イメージのリリースノートを公開しています。
 
+* ### pifield-bookworm-lite-arm64-20240219
+  2024/02/19  以降に出荷された製品には本リリースの OS イメージがインストールされています。  
+  詳細は、[pifield-bookworm-lite-arm64-20240219.md](./pifield-bookworm-lite-arm64-20240219.md) を参照してください。
+
 * ### pifield-bullseye-lite-armhf-20230511
   2023/05/11  以降に出荷された製品には本リリースの OS イメージがインストールされています。  
   詳細は、[pifield-bullseye-lite-armhf-20230511.md](./pifield-bullseye-lite-armhf-20230511.md) を参照してください。
