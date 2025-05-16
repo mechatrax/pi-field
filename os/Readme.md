@@ -1,6 +1,10 @@
 ## リリースノート
 Pi-field 用 microSD カードにインストールされている OS イメージのリリースノートを公開しています。
 
+* ### pifield-bookworm-lite-arm64-20250516
+  2025/05/16  以降に出荷された製品には本リリースの OS イメージがインストールされています。  
+  詳細は、[pifield-bookworm-lite-arm64-20250516.md](./pifield-bookworm-lite-arm64-20250516.md) を参照してください。
+
 * ### pifield-bookworm-lite-arm64-20241121
   2024/11/21  以降に出荷された製品には本リリースの OS イメージがインストールされています。  
   詳細は、[pifield-bookworm-lite-arm64-20241121.md](./pifield-bookworm-lite-arm64-20241121.md) を参照してください。
