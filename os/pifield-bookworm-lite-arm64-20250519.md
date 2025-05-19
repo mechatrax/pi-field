@@ -36,7 +36,8 @@ Raspberry Pi OS からの変更内容は次のとおりです。
     python-sleepi  
     sleepi3-utils  
     sleepi3-monitor  
-    sleepi3-firmware
+    sleepi3-firmware  
+    sleepi3-dkms
 
   * その他パッケージ  
     soracom
