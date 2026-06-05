@@ -1,0 +1,47 @@
+# pifield-trixie-lite-arm64-20260605
+Raspberry Pi OS (64-bit) Lite April 21st 2026 を元に変更を加えています。
+
+## イメージファイル
+イメージファイルは次のリンクからダウンロードできます。  
+[pifield-trixie-lite-arm64-20260605.img.xz](https://mechatrax.com/data/pi-field/pifield-trixie-lite-arm64-20260605.img.xz)  
+
+イメージファイルの SHA256 ハッシュ値は次のとおりです。
+```
+d07b5d882fcecc211a922b3788cc91395c11125081323bb634f91243b61de3a6
+```
+
+## 変更内容
+Raspberry Pi OS からの変更内容は次のとおりです。
+  * 4GPi 用パッケージをインストール
+  * ファイアウォールに ufw を使用（デフォルトは許可、wwan0 と ppp0 のみ受信拒否）
+  * シリアルコンソールを有効化
+  * USB ポートの電流制限を緩和する設定を有効化
+  * rootfs で ext4 の 64bit オプションを有効化
+  * ハードウェアウォッチドッグタイマの監視に systemd を使用
+  * APT::Periodic の無効化
+  * avahi-daemon で ppp0 と wwan0 を無視
+  * slee-Pi3 用パッケージをインストール
+  * パッケージを 20260605 時点の最新版に更新
+
+## インストールパッケージ
+  * Raspbian パッケージ  
+    jo  
+    jq  
+    ufw
+
+  * 独自パッケージ  
+    4gpi-utils  
+    4gpi-net-mods  
+    4gpi-networkmanager  
+    python-sleepi  
+    sleepi3-utils  
+    sleepi3-monitor  
+    sleepi3-firmware  
+    sleepi3-dkms
+
+  * その他パッケージ  
+    soracom
+
+## 削除パッケージ  
+  * 常駐プロセス削減のため削除  
+    udisks2
