@@ -1,6 +1,10 @@
 ## リリースノート
 Pi-field 用 microSD カードにインストールされている OS イメージのリリースノートを公開しています。
 
+* ### pifield-trixie-lite-arm64-20260605
+  2026/06/05  以降に出荷された製品には本リリースの OS イメージがインストールされています。  
+  詳細は、[pifield-trixie-lite-arm64-20260605.md](./pifield-trixie-lite-arm64-20260605.md) を参照してください。
+
 * ### pifield-trixie-lite-arm64-20260520
   2026/05/20  以降に出荷された製品には本リリースの OS イメージがインストールされています。  
   詳細は、[pifield-trixie-lite-arm64-20260520.md](./pifield-trixie-lite-arm64-20260520.md) を参照してください。
